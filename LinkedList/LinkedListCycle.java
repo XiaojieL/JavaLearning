@@ -1,6 +1,8 @@
-//Both approaches use two pointers
-//Time: O(n)
-//Space: O(1)
+/* LeetCode #141i
+Both approaches use two pointers
+Time: O(n)
+Space: O(1)
+*/
 public class LinkedListCycle {
   public boolean hasCycle(ListNode head) {
     if (head == null || head.next == null) {
