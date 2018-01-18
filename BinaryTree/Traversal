@@ -1,0 +1,14 @@
+     A
+  B     C
+D  E | F  G
+
+pre-order: A BDE CFG
+in-order: DBE A FCG
+post-order: DEB A FGC
+level-order: A BC DEFG
+
+
+Binary Search Tree:
+Each root node's val >= any node's val from left-subtree
+                     < any node's val from right-subtree
+Use in-order traversal on BST will form an ordered incremental num array

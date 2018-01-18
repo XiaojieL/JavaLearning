@@ -1,4 +1,4 @@
-/* LeetCode #141i
+/* LeetCode #141
 Both approaches use two pointers
 Time: O(n)
 Space: O(1)
