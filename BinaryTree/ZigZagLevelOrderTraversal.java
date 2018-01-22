@@ -7,8 +7,11 @@ class ZigZagLevelOrder {
 		Stack<TreeNode> temp = null;
 		currStack.push(root);
 		boolean normalOrder = true;
+		//the outer while loop exists because each time when a currStack is cleared 
+		//out, it will be changed to next stack
 		while (!currStack.isEmpty()) {
 			List<Integer> level = new ArrayList<>();
+			//this while loop clears out current stack
 			while (!currStack.isEmpty()) {
 				TreeNode curr = currStack.pop();
 				level.add(curr.val);
@@ -30,6 +33,7 @@ class ZigZagLevelOrder {
 			}
 			
 			result.add(level);
+			//currStack is empty now
 			temp = currStack;
 			currStack = nextStack;
 			nextStack = temp;

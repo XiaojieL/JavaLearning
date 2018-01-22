@@ -4,7 +4,7 @@ D  E | F  G
 
 pre-order: A BDE CFG
 in-order: DBE A FCG
-post-order: DEB A FGC
+post-order: DEB FGC A
 level-order: A BC DEFG
 
 
