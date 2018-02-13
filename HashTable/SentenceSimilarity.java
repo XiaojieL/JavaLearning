@@ -12,8 +12,11 @@ class SentenceSimilarity {
 	  	map.put(p[1], s2);
 	  }
 	  for (int i = 0; i < words1.length; i++) {
-	  	
+	  	if (words1[i].equals(words2[i])) continue;
+	  	if (map.containsKey(words1[i]) && map.get(words1[i]).contains(words2[i])) continue;
+	  	else return false;
 	  }
+	  return true;
 	
 	}
 }
