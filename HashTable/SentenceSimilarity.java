@@ -3,6 +3,7 @@ class SentenceSimilarity {
 	public boolean areSentencesSimilar(String[] words1, String[] words2, String[][] pairs) {
 	  if (worsd1.length != words2.length) return false;
 	  Map<String, Set<String>> map = new HashMap<>();
+	  //add both p[0] & p[1] as key into map to make sure they both exist 
 	  for (String[] p : pairs) {
 	  	Set<String> s1 = map.getOrDefault(p[0], new HashSet<>());
 	  	s1.add(p[1]);
